@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fd143d151c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="proCard">
+      <div class="profileContent">
+        <img
+          src="260x260-pp.jpg"
+          alt="Profile Picture of Ekechukwu Lilian Chisom"
+          data-testid="profilePicture"
+          class="profilePicture"
+        />
+
+        <section>
+          <h1 data-testid="fullName" class="fullName">
+            Ekechukwu Lilian Chisom
+          </h1>
+          <h3 data-testid="jobTitle" class="jobTitle">
+            Front-end Web Developer
+          </h3>
+          <p data-testid="shortBio" class="shortBio">
+            I'm a passionate Front-End Web Developer specializing in creating
+            intuitive, dynamic, and responsive web experiences. With expertise
+            in modern front-end technologies, I thrive on building
+            high-performance applications that exceed user expectations. Outside
+            of coding, I stay balanced through fitness, cooking, and exploring
+            new ideas, which helps me bring creativity and fresh perspectives to
+            every project.
+          </p>
+
+          <div class="contact">
+            <i
+              class="fa-solid fa-location-dot fa-2xl"
+              data-testid="currentLocation"
+            ></i>
+            <span>Lagos, Nigeria</span>
+
+            <a
+              href="mailto:lilianekechukwuc@gmail.com"
+              data-testid="emailAddress"
+            >
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+              <span>@Email</span>
+            </a>
+
+            <div data-testid="socialLinks" class="socialLinks">
+              <a href="https://www.linkedin.com/in/lilian-ekechukwu">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                <span>@LinkedIn</span>
+              </a>
+              <a href="https://www.facebook.com/lilian.ekechukwu.5">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <span>@Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 id="utcTime" class="utcTime" data-testid="currentTimeUTC"></h3>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

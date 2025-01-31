@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.proCard {
+  background-color: #908a8a;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileContent {
+  background: url(workplace-299x140.jpeg),
+    linear-gradient(to right, #cec6bf, #ffffff);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  border: 2px solid #cec6bf;
+  max-width: 530px;
+  height: fit-content;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  margin-top: 35px;
+}
+
+h1,
+h3,
+p {
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #424141;
+}
+
+.shortBio {
+  color: #424141;
+  line-height: 1.2;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact i {
+  margin-right: 5px;
+}
+
+.contact a {
+  margin-left: 15px;
+  color: #333;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+  color: #a28164;
+  transform: scale(1.1);
+}
+.contact span {
+  margin-right: 8px;
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.socialLinks a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.socialLinks i {
+  margin-right: 5px;
+}
+
+.utcTime {
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  border: 5px solid #333;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(61, 60, 60, 1);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .proCard {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .profileContent {
+    padding: 10px;
+  }
+
+  .profilePicture {
+    max-width: 150px;
+
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  .shortBio {
+    font-size: 0.8em;
+  }
+
+  .contact a,
+  .socialLinks a {
+    font-size: 0.9em;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .utcTime {
+    font-size: 0.9em;
+    padding: 4px;
+  }
+}
