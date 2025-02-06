@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Game</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header data-testid="gameInstructions">
+      <h1>Guess The Correct Color</h1>
+    </header>
+
+    <div id="contain">
+      <div id="gameStatus" data-testid="gameStatus">"""</div>
+
+      <div id="container">
+        <main class="colorBox" data-testid="colorBox">
+          <div class="box"></div>
+        </main>
+      </div>
+    </div>
+
+    <div id="colorOption" data-testid="colorOption">
+      <!-- Color options will be dynamically added here -->
+    </div>
+
+    <footer>
+      <div id="scoreBox">
+        <div id="score-label" data-testid="score">
+          SCORE: <span id="score">0</span>
+        </div>
+      </div>
+
+      <div id="btns">
+        <button class="newGameButton" data-testid="newGameButton">
+          New Game
+        </button>
+      </div>
+    </footer>
+    <div id="emojiContainer"><!-- Emoji will be dynamically added here --></div>
+  </body>
+</html>
